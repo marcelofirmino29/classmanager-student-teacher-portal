@@ -3,17 +3,18 @@
 {% block content %}
 
 <div class="container">
-<div class="jumbotron">
-  {% if marks_updated %}
-  <h2>Marks updated successfully.</h2>
-  {% else %}
-  <h1>Update Marks.</h1>
-  <form  method="post">
-    {% csrf_token %}
-    {% bootstrap_form form %}
-    <input type="submit" class="btn btn-primary" value="Update">
-  </form>
-  {% endif %}
+  <div class="jumbotron">
+    {% if marks_updated %}
+    <h2>Notas atualizadas com sucesso.</h2>
+    {% else %}
+    <h1>Atualizar Notas.</h1>
+    <form method="post">
+      {% csrf_token %}
+      {% bootstrap_form form %}
+      <input type="submit" class="btn btn-primary" value="Atualizar">
+    </form>
+    {% endif %}
+  </div>
 </div>
-</div>
+
 {% endblock %}

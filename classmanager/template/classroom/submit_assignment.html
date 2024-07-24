@@ -2,13 +2,13 @@
 {% load bootstrap4 %}
 {% block content %}
 <div class="container">
-<div class="jumbotron">
-  <h1>Submit Assignment</h1>
-  <form enctype="multipart/form-data" method="post">
-    {% csrf_token %}
-    {% bootstrap_form form %}
-    <input type="submit" class="btn btn-primary" name="" value="Submit">
-  </form>
-</div>
+  <div class="jumbotron">
+    <h1>Enviar Tarefa</h1>
+    <form enctype="multipart/form-data" method="post">
+      {% csrf_token %}
+      {% bootstrap_form form %}
+      <input type="submit" class="btn btn-primary" name="" value="Enviar">
+    </form>
+  </div>
 </div>
 {% endblock %}

@@ -2,21 +2,19 @@
 {% load bootstrap4 %}
 {% block content %}
 
-
 <div class="container">
   <div class="jumbotron">
-{% if profile_updated %}
-<h1>Your profile has been successfully updated.</h1>
-{% else %}
-  <h1>Update Profile</h1>
-  <form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {% bootstrap_form form %}
-    <input class="btn btn-primary" type="submit" name="" value="Submit">
-  </form>
+    {% if profile_updated %}
+    <h1>Seu perfil foi atualizado com sucesso.</h1>
+    {% else %}
+    <h1>Atualizar Perfil</h1>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {% bootstrap_form form %}
+      <input class="btn btn-primary" type="submit" value="Enviar">
+    </form>
+    {% endif %}
   </div>
-  </div>
-
-{% endif %}
+</div>
 
 {% endblock %}

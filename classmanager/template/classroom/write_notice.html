@@ -2,21 +2,20 @@
 {% block content %}
 
 <div class="container">
-<div class="jumbotron">
-  {% if notice_sent %}
-  <h1>Your Notice is added successfully.</h1>
-  {% else %}
-  <h1 style="text-align:center;">Write your notice here!</h1>
-  <h3>Notice will be sent to every student in your class.</h3>
-  <hr>
-  <form method="post">
-    {% csrf_token %}
-    {{ notice.as_p }}
-    <input type="submit" class="btn btn-danger" value="Add Notice">
-  </form>
-  {% endif %}
-</div>
+  <div class="jumbotron">
+    {% if notice_sent %}
+      <h1>Seu aviso foi adicionado com sucesso.</h1>
+    {% else %}
+      <h1 style="text-align:center;">Escreva seu aviso aqui!</h1>
+      <h3>O aviso será enviado a todos os alunos da sua turma.</h3>
+      <hr>
+      <form method="post">
+        {% csrf_token %}
+        {{ notice.as_p }}
+        <input type="submit" class="btn btn-danger" value="Adicionar Aviso">
+      </form>
+    {% endif %}
+  </div>
 </div>
 
-
-{%  endblock %}
+{% endblock %}

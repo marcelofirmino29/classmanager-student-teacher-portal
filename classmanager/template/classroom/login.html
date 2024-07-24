@@ -2,8 +2,6 @@
 {% load static %}
 {% block content %}
 
-
-
 <div class="login-page">
   <img src="{% static 'images/login-background.PNG' %}" alt="">
   <div class="login-form">
@@ -15,27 +13,26 @@
       {% for message in messages %}
         <div class="alert {% if message.tags %} alert-{{ message.tags }}{% endif %}">{{ message|safe }}</div>
       {% endfor %}
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Fechar">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
     {% endif %}
-    <h1>Login</h1>
+    <h1>Entrar</h1>
     <form action="{% url 'classroom:login' %}" method="post">
       {% csrf_token %}
-      <p>Username:</p>
-      <input type="text" name="username" placeholder="Enter your username">
+      <p>Nome de Usuário:</p>
+      <input type="text" name="username" placeholder="Digite seu nome de usuário">
       <br>
       <br>
-      <p>Password:</p>
-      <input type="password" name="password" placeholder="Enter password">
+      <p>Senha:</p>
+      <input type="password" name="password" placeholder="Digite sua senha">
       <br>
       <br>
-      <input class="btn btn-primary" type="submit" name="" value="Login">
+      <input class="btn btn-primary" type="submit" name="" value="Entrar">
     </form>
-    <a href="{% url 'classroom:signup' %}">Don't have an account.</a>
+    <a href="{% url 'classroom:signup' %}">Não tem uma conta?</a>
   </div>
 </div>
-
 
 {% endblock %}

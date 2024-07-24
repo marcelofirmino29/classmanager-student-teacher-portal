@@ -2,19 +2,20 @@
 {% block content %}
 
 <div class="container">
-<div class="jumbotron">
-  {% if message_sent %}
-    <h2>Message is sent successfully.</h2>
-  {% else %}
-  <h1 style="text-align: center;">Write a message to {{ teacher.name }}</h1>
-  <h6 style="text-align: center;">After sending message you will not be able to delete or edit message.</h6>
-  <hr>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" class="btn btn-primary" name="" value="Send Message">
-  </form>
-  {% endif %}
+  <div class="jumbotron">
+    {% if message_sent %}
+      <h2>Mensagem enviada com sucesso.</h2>
+    {% else %}
+      <h1 style="text-align: center;">Escreva uma mensagem para {{ teacher.name }}</h1>
+      <h6 style="text-align: center;">Após enviar a mensagem, você não poderá deletar ou editar a mensagem.</h6>
+      <hr>
+      <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" class="btn btn-primary" value="Enviar Mensagem">
+      </form>
+    {% endif %}
+  </div>
 </div>
-</div>
+
 {% endblock %}

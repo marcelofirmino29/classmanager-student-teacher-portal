@@ -1,5 +1,5 @@
 <!--
-Template for adding marks. This template can only be accessed by teachers and it contains form where teachers can add marks for specific student.
+Template para adicionar notas. Este template só pode ser acessado por professores e contém um formulário onde os professores podem adicionar notas para um aluno específico.
 -->
 
 {% extends 'classroom/base.html' %}
@@ -8,13 +8,13 @@ Template for adding marks. This template can only be accessed by teachers and it
 <div class="container">
 <div class="jumbotron">
   {% if marks_given %}
-  <h1>Marks added successfully.</h1>
+  <h1>Notas adicionadas com sucesso.</h1>
   {% else %}
-  <h1>Give Marks to {{ student.name }}</h1>
+  <h1>Dar Notas para {{ student.name }}</h1>
   <form method="post">
     {% csrf_token %}
     {% bootstrap_form form %}
-    <input type="submit" class="btn btn-danger" name="" value="Add Marks">
+    <input type="submit" class="btn btn-danger" name="" value="Adicionar Notas">
   </form>
   {% endif %}
 </div>

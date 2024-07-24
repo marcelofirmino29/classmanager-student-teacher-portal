@@ -7,93 +7,93 @@
   {% for message in messages %}
     <div class="alert {% if message.tags %} alert-{{ message.tags }}{% endif %}">{{ message|safe }}</div>
   {% endfor %}
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Fechar">
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
 {% endif %}
 
 <div class="banner">
-      <img src="{% static 'images/first.PNG' %}" alt="">
-      <div class="content">
-        <h1>Class Manager</h1>
-        <p>A Student-Teacher Portal</p>
-      </div>
-    </div>
+  <img src="{% static 'images/first.PNG' %}" alt="">
+  <div class="content">
+    <h1>Gerenciador de Turmas</h1>
+    <p>Um Portal para Alunos e Professores</p>
+  </div>
+</div>
 
-    <div class="about">
-      <h1>About Us</h1>
-      <p>Class Manager is a student-teacher portal with various classroom features like uploading assignments, submissions, Class Notice and many more. Students and Teacher can login in the portal and can experience interactive classroom experience online.
-      One of the most powerful features of class manager is its student managing abilities. Teacher can easily manage their students and keep them updated about all of the activities in class.</p>
-    </div>
+<div class="about">
+  <h1>Sobre Nós</h1>
+  <p>O Gerenciador de Turmas é um portal para alunos e professores com várias funcionalidades de sala de aula, como o envio de tarefas, submissões, Avisos de Turma e muito mais. Alunos e Professores podem fazer login no portal e experimentar uma sala de aula interativa online.
+  Uma das características mais poderosas do Gerenciador de Turmas é sua capacidade de gerenciar alunos. O Professor pode gerenciar facilmente seus alunos e mantê-los atualizados sobre todas as atividades da turma.</p>
+</div>
 
-    <div class="use-content">
-      <h1>Our Services</h1>
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <div class="box">
-            <div class="imgBx">
-              <img src="{% static 'images/teacher.PNG' %}" alt="">
-            </div>
-            <div class="content">
-              <h3>For Teacher</h3>
-              <ol>
-                <li>Teachers can add student in their class through Add Student option.</li>
-                <li>After adding students in their class, Teacher can give or edit their class students marks.</li>
-                <li>Teachers can also write notice which will be send to all students in their class.</li>
-                <li>Teachers can upload assignments through upload assignment options.</li>
-                <li>Teacher can check their student's assignment submission and give them marks accordingly.</li>
-                <li>Students can message Teachers directly and their messages can be seen in Inbox.</li>
-                <li>Teacher can also all the marks given by them to a student by accessing their Marks profile and can edit their marks.</li>
-                <li>User can add profile pic through edit profile option.</li>
-              </ol>
-            </div>
-          </div>
+<div class="use-content">
+  <h1>Nossos Serviços</h1>
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="box">
+        <div class="imgBx">
+          <img src="{% static 'images/teacher.PNG' %}" alt="">
         </div>
-        <div class="col-12 col-md-6">
-          <div class="box">
-            <div class="imgBx">
-              <img src="{% static 'images/homeimg.PNG' %}" alt="">
-            </div>
-            <div class="content">
-              <h3>For Student</h3>
-              <ol>
-                <li>Students can login in the portal and keep themselves updated of all the activities going on in the class.</li>
-                <li>Students can see the notice given by their teacher in the Class Notice option.</li>
-                <li>Students can download their assignments in the Assignments option and can also submit it their. ( Once assignment is submitted, it can't be changed later. )</li>
-                <li> Students can contact any teacher through message option in All Teachers List. </li>
-                <li>Students can check their marks in the Marks option.</li>
-                <li>User can add profile pic through edit profile option.</li>
-              </ol>
-          </div>
+        <div class="content">
+          <h3>Para Professores</h3>
+          <ol>
+            <li>Os professores podem adicionar alunos à sua turma através da opção Adicionar Aluno.</li>
+            <li>Após adicionar alunos à turma, o Professor pode dar ou editar as notas dos alunos.</li>
+            <li>Os professores também podem escrever avisos que serão enviados a todos os alunos da turma.</li>
+            <li>Os professores podem enviar tarefas através da opção de envio de tarefas.</li>
+            <li>O Professor pode verificar a submissão de tarefas dos alunos e atribuir notas conforme necessário.</li>
+            <li>Os alunos podem enviar mensagens diretamente aos professores e suas mensagens podem ser visualizadas na Caixa de Entrada.</li>
+            <li>O Professor também pode verificar todas as notas dadas a um aluno acessando seu Perfil de Notas e pode editar essas notas.</li>
+            <li>O usuário pode adicionar uma foto de perfil através da opção editar perfil.</li>
+          </ol>
         </div>
       </div>
     </div>
-    </div>
-
-    <div class="research">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="{% static 'images/mastery-based-education.PNG' %}" alt="">
+    <div class="col-12 col-md-6">
+      <div class="box">
+        <div class="imgBx">
+          <img src="{% static 'images/homeimg.PNG' %}" alt="">
         </div>
-        <div class="col-md-8">
-          <div class="digital-content">
-            <h2>Digital Learning</h2>
-            <br>
-            <p>We surveyed over 16,000 teachers and administrators to better understand the state of digital learning. Class Manager provides all facilities that is needed for improvising digital learning.</p>
-          </div>
+        <div class="content">
+          <h3>Para Alunos</h3>
+          <ol>
+            <li>Os alunos podem fazer login no portal e se manter atualizados sobre todas as atividades da turma.</li>
+            <li>Os alunos podem ver os avisos dados pelo professor na opção Aviso de Turma.</li>
+            <li>Os alunos podem baixar suas tarefas na opção Tarefas e também enviá-las lá. (Uma vez que a tarefa é enviada, não pode ser alterada posteriormente.)</li>
+            <li>Os alunos podem contatar qualquer professor através da opção mensagem na Lista de Todos os Professores.</li>
+            <li>Os alunos podem verificar suas notas na opção Notas.</li>
+            <li>O usuário pode adicionar uma foto de perfil através da opção editar perfil.</li>
+          </ol>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
-    <div class="social">
-      <h1>Are you ready to advance what's possible in education.</h1>
-      <h3>Then connect with us on social media.</h3>
-      <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
-      <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
-      <a class="social-icon" href="#"><i class="fab fa-instagram"></i></a>
-      <a class="social-icon" href="#"><i class="fab fa-google"></i></a>
-      <a class="social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
+<div class="research">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="{% static 'images/mastery-based-education.PNG' %}" alt="">
     </div>
+    <div class="col-md-8">
+      <div class="digital-content">
+        <h2>Aprendizado Digital</h2>
+        <br>
+        <p>Realizamos uma pesquisa com mais de 16.000 professores e administradores para entender melhor o estado do aprendizado digital. O Gerenciador de Turmas oferece todas as facilidades necessárias para aprimorar o aprendizado digital.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="social">
+  <h1>Está pronto para avançar no que é possível na educação?</h1>
+  <h3>Então, conecte-se conosco nas redes sociais.</h3>
+  <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+  <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
+  <a class="social-icon" href="#"><i class="fab fa-instagram"></i></a>
+  <a class="social-icon" href="#"><i class="fab fa-google"></i></a>
+  <a class="social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
+</div>
 
 {% endblock %}

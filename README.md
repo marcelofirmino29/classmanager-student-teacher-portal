@@ -1,65 +1,65 @@
 # classmanager
-A Student-Teacher Portal built using HTML, CSS, Python and Django
+Um Portal Aluno-Professor construído usando HTML, CSS, Python e Django
 
-Class Manager is a Student-Teacher Portal where techers and student can sign up and teachers can add students in their class.
+Class Manager é um Portal Aluno-Professor onde professores e alunos podem se cadastrar, e os professores podem adicionar alunos em suas turmas.
 
-Class Manager contains more features like:
-1. Teachers can add or edit their student's marks after adding them in the class.
-2. Teachers can also write notice which will be sent to all students in their class.
-3. Teachers can upload assignments which will be sent to all students in their class and students can download the assignments.
-4. Students can also submit their assignment but once submitted can't be changed later.
-5. Teachers can also see all the mark given by them to a student through their marks profile and can edit them if necessary.
-6. Students can see marks given to them by teachers in marks section.
-7. Student can see the list of all teachers in the portal and can message any of them.
-8. Teachers can see all the messages written by students in Inbox.
-9. User can search any student through search option at the top of the student list page. Same goes for teachers list.
-10. User can see their profile through profile option.
-11. User can add profile picture and edit their profile through edit profile.
-12. User can also change their password if necessary.
+O Class Manager contém mais recursos, como:
+1. Professores podem adicionar ou editar as notas de seus alunos após adicioná-los à turma.
+2. Professores também podem escrever avisos que serão enviados a todos os alunos da turma.
+3. Professores podem enviar tarefas que serão enviadas a todos os alunos da turma e os alunos podem baixar as tarefas.
+4. Os alunos também podem enviar suas tarefas, mas uma vez enviadas, não podem ser alteradas posteriormente.
+5. Professores podem ver todas as notas dadas por eles a um aluno através do perfil de notas e podem editá-las, se necessário.
+6. Alunos podem ver as notas dadas a eles pelos professores na seção de notas.
+7. Alunos podem ver a lista de todos os professores no portal e podem enviar mensagens para qualquer um deles.
+8. Professores podem ver todas as mensagens escritas pelos alunos na Caixa de Entrada.
+9. O usuário pode procurar qualquer aluno através da opção de busca na parte superior da página da lista de alunos. O mesmo vale para a lista de professores.
+10. O usuário pode ver seu perfil através da opção de perfil.
+11. O usuário pode adicionar uma foto de perfil e editar seu perfil através da opção de editar perfil.
+12. O usuário também pode alterar sua senha, se necessário.
 
-## Screenshots
+## Capturas de Tela
 
-### Home Page
+### Página Inicial
 
 ![classmanager](https://user-images.githubusercontent.com/59278577/85334196-73729680-b4f8-11ea-90b6-a42336e1d7dd.PNG)
 ![classmanager-homepage](https://user-images.githubusercontent.com/59278577/85334362-c2203080-b4f8-11ea-973c-e9ff6b481810.PNG)
 ![classmanager-homepage1](https://user-images.githubusercontent.com/59278577/85334481-f398fc00-b4f8-11ea-88fc-ba3371076930.PNG)
 
-### Login Page
+### Página de Login
 
 ![classmanager-loginpage](https://user-images.githubusercontent.com/59278577/85334573-1deab980-b4f9-11ea-86b9-4e1367e78057.PNG)
 
-### Options Avalaible for teachers
+### Opções Disponíveis para Professores
 
 ![classmanager-teacheroptions](https://user-images.githubusercontent.com/59278577/85334843-8cc81280-b4f9-11ea-8162-2ac5756f3884.PNG)
 
-### Options available for students
+### Opções Disponíveis para Alunos
 
 ![classmanager-studentsoptionlist](https://user-images.githubusercontent.com/59278577/85336072-ac603a80-b4fb-11ea-87b5-a942ce294a2b.PNG)
 
-### Profile Page
-User can edit their profile by clicking on Edit profile
+### Página de Perfil
+O usuário pode editar seu perfil clicando em Editar perfil.
 
 ![classmanager-profilepic](https://user-images.githubusercontent.com/59278577/85335035-f34d3080-b4f9-11ea-9478-bc4632798eef.PNG)
 
-### Marks given by teacher
-Here, teachers can see all the marks given by them to a particular student of her class and can update them.
+### Notas dadas pelo professor
+Aqui, os professores podem ver todas as notas dadas por eles a um aluno específico de sua turma e podem atualizá-las.
 
 ![classroom-marksgiven](https://user-images.githubusercontent.com/59278577/85335383-8d14dd80-b4fa-11ea-8257-797c5a0fe52a.PNG)
 
-### Marks list obtained by Student
+### Lista de notas obtidas pelo aluno
 
 ![classmanager-marksobtained](https://user-images.githubusercontent.com/59278577/85335564-d6fdc380-b4fa-11ea-8219-09d40f96f8e7.PNG)
 
-### Assignments uploaded by teacher
-Students can download assignment given by their teacher and can submit their work too.
+### Tarefas enviadas pelo professor
+Os alunos podem baixar as tarefas enviadas pelo professor e podem enviar seu trabalho também.
 
 ![classmanager-assignmentpage](https://user-images.githubusercontent.com/59278577/85335929-6c995300-b4fb-11ea-883d-48ab096dd89a.PNG)
 
-### Assignment submission by students
-Teacher can check submissions made by their students  and can give them marks for that.
+### Envio de tarefas pelos alunos
+Os professores podem verificar os envios feitos pelos alunos e podem dar notas para isso.
 ![classmanager-submissionlist](https://user-images.githubusercontent.com/59278577/85335777-2e039880-b4fb-11ea-8d7d-0edc517ac11e.PNG)
 
-Class Manager uses the multi-user concept of Django where student and teacher are different types of user and have different functionalities.
-Also adding features like notice, messages, Assignment, adding students to the class etc. requires a lot of Django concepts.
-Projects like Class Manager is a great choice to practice your Django skills and test yourself. 
+Class Manager usa o conceito de multiusuário do Django, onde alunos e professores são tipos diferentes de usuários e têm funcionalidades diferentes.
+Além disso, adicionar recursos como avisos, mensagens, tarefas, adicionar alunos à turma, etc., requer muitos conceitos do Django.
+Projetos como o Class Manager são uma ótima escolha para praticar suas habilidades em Django e testar a si mesmo.
